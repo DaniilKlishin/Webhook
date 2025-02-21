@@ -42,7 +42,7 @@ def calculator():
             
             operations = {
                 '+': add,
-                '=': subtract,
+                '+': subtract,
                 '*': multiply,
                 '/': divide,
                 '**': degree,
