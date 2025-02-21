@@ -13,7 +13,7 @@ def multiply(number_1, number_2):
 
 def divide(number_1, number_2):
     if number_2 == 0:
-        return 'Ошибка: Деление на ноль'
+        return 'Ошибка: Деление н ноль'
     return number_1 / number_2
 
 def degree(number_1, number_2):
