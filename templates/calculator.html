@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h2>Простой калькулятор</h2>
+    <form method="post">
+        <input type="text" name="num1" placeholder="Введите число" required>
+        <select name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="**">**</option>
+            <option value="max">max</option>
+            <option value="min">min</option>
+        </select>
+        <input type="text" name="num2" placeholder="Введите число" required>
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    {% if result is not none %}
+        <h3>Результат: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
